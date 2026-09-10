@@ -1,0 +1,49 @@
+La extensión recomendada para el trabajo de fin de máster es de 40 a 70 páginas, sin que se pueda entregar trabajos con una extensión inferior a 30 páginas ni superior a 100 páginas (excluidos índices, bibliografía y otras referencias y anexos), además de los siguientes aspectos:
+
+
+bullet
+Formato: Word.
+
+
+bullet
+Tipografía: Calibri, Arial o Times New Roman.
+
+
+bullet
+Tamaño: 11 puntos para el cuerpo de texto (con opción de títulos y subtítulos a 14, 16 o 18, para clarificar la jerarquía del documento).
+
+
+bullet
+Interlineado: 1,5 líneas.
+
+
+bullet
+Espacio de 6 puntos entre párrafos.
+
+
+bullet
+Texto justificado.
+
+
+bullet
+Pie de imágenes y gráficas en tamaño 8, centrado.
+
+
+bullet
+Numeración de página en la esquina inferior derecha.
+
+
+bullet
+El índice ha de incluir hasta el nivel 3 de capítulos.
+
+
+bullet
+Portada: es obligatorio seguir e incluir los elementos indicados en la plantilla descargable.
+
+
+bullet
+La siguiente página a la portada será una página en blanco, seguida de una página de agradecimientos (opcional). Hasta aquí no se pondrá número de página, pero sí contará a efectos de la numeración total de páginas del proyecto.
+
+
+bullet
+Los capítulos de la memoria se han de iniciar en una nueva página.

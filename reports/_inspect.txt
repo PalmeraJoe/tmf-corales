@@ -1,0 +1,99 @@
+n = 34515
+
+--- columnas disponibles ---
+Site_ID, Sample_ID, Data_Source, Latitude_Degrees, Longitude_Degrees, Ocean_Name, Reef_ID, Realm_Name, Ecoregion_Name, Country_Name, State_Island_Province_Name, City_Town_Name, Site_Name, Distance_to_Shore, Exposure, Turbidity, Cyclone_Frequency, Date_Day, Date_Month, Date_Year, Depth_m, Substrate_Name, Percent_Cover, Bleaching_Level, Percent_Bleaching, ClimSST, Temperature_Kelvin, Temperature_Mean, Temperature_Minimum, Temperature_Maximum, Temperature_Kelvin_Standard_Deviation, Windspeed, SSTA, SSTA_Standard_Deviation, SSTA_Mean, SSTA_Minimum, SSTA_Maximum, SSTA_Frequency, SSTA_Frequency_Standard_Deviation, SSTA_FrequencyMax, SSTA_FrequencyMean, SSTA_DHW, SSTA_DHW_Standard_Deviation, SSTA_DHWMax, SSTA_DHWMean, TSA, TSA_Standard_Deviation, TSA_Minimum, TSA_Maximum, TSA_Mean, TSA_Frequency, TSA_Frequency_Standard_Deviation, TSA_FrequencyMax, TSA_FrequencyMean, TSA_DHW, TSA_DHW_Standard_Deviation, TSA_DHWMax, TSA_DHWMean, Date, Site_Comments, Sample_Comments, Bleaching_Comments
+
+--- Data_Source ---
+nulos: 0.00%  unicos: 9
+Data_Source
+Reef_Check    22531
+Donner         5770
+AGRRA          2848
+FRRP           2394
+Kumagai         660
+McClanahan      226
+Safaie           77
+Nuryana           5
+Setiawan          4
+
+--- Ocean_Name ---
+nulos: 0.00%  unicos: 5
+Ocean_Name
+Pacific         17446
+Atlantic        13319
+Indian           2327
+Red Sea          1054
+Arabian Gulf      369
+
+--- Ecoregion_Name ---
+nulos: 0.01%  unicos: 113
+Ecoregion_Name
+Bahamas and Florida Keys                      3990
+Belize and west Caribbean                     3749
+Hispaniola Puerto Rico and Lesser Antilles    2640
+Sunda Shelf south-east Asia                   2436
+Sulu Sea                                      2006
+Central and northern Great Barrier Reef       1409
+Society Islands French Polynesia              1299
+South-east Philippines                        1253
+Jamaica                                       1077
+Fiji                                          1059
+North and central Red Sea                     1020
+Cuba and Cayman Islands                        848
+Lesser Sunda Islands and Savu Sea              670
+Hong Kong                                      655
+Maldive Islands                                612
+Netherlands Antilles and south Caribbean       604
+Gulf of Thailand                               599
+Banda Sea and Molucca Islands                  546
+Taiwan and coastal China                       536
+Moreton Bay eastern Australia                  534
+
+--- Realm_Name ---
+nulos: 0.00%  unicos: 8
+Realm_Name
+Central Indo-Pacific           14843
+Tropical Atlantic              13305
+Western Indo-Pacific            3501
+Eastern Indo-Pacific            1714
+Temperate Australasia            536
+Temperate Northern Pacific       508
+Tropical Eastern Pacific          94
+Temperate Northern Atlantic       14
+
+--- cobertura de identificadores ---
+Site_ID      nulos   0.00%  unicos 11068
+Reef_ID      nulos  34.72%  unicos 4115
+Sample_ID    nulos   0.00%  unicos 23271
+
+--- completitud TSA_DHW ---
+TSA_DHW        nulos   0.35%
+SSTA_DHW       nulos   0.35%
+TSA_DHWMax     nulos   0.31%
+
+--- prevalencia de Severo y profundidad por Data_Source ---
+                 n  pct_sev  media_blq  prof_media  reefid_informado
+Data_Source                                                         
+Reef_Check   22531     2.11       2.53        6.51             100.0
+Donner        5770    51.89      35.05        9.82               0.0
+AGRRA         2848     0.74       3.31        7.01               0.0
+FRRP          2394    14.41      15.31        8.13               0.0
+Kumagai        660    38.03      17.46        5.13               0.0
+McClanahan     226    77.43      57.33        5.96               0.0
+Safaie          77    25.97      24.35        5.01               0.0
+Nuryana          5    60.00      30.90         NaN               0.0
+Setiawan         4   100.00      66.00         NaN               0.0
+
+--- Reef_ID informado: composicion por Data_Source ---
+n con Reef_ID = 22531
+Data_Source
+Reef_Check    22531
+
+--- correlacion Depth_m vs Percent_Bleaching ---
+bruta            : 0.1655
+dentro de Donner                  : 0.0929  (n=5770)
+dentro de Kumagai                 : -0.1686  (n=660)
+dentro de Reef_Check              : 0.0114  (n=22531)
+dentro de McClanahan              : 0.0042  (n=226)
+dentro de FRRP                    : -0.0228  (n=2394)
+dentro de AGRRA                   : 0.2334  (n=2848)
