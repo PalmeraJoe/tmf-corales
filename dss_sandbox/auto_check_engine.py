@@ -61,6 +61,7 @@ LOCAL_FEATURES = [
     "local_site_severo_rate",
     "local_site_dhw_mean",
     "local_site_n_hist",
+    "local_site_last_class",
 ]
 CLASS_ORDER = ["Bajo", "Moderado", "Severo"]
 
@@ -132,6 +133,13 @@ def site_history_table(train: pd.DataFrame) -> pd.DataFrame:
         local_site_dhw_mean=("TSA_DHW", "mean"),
         local_site_n_hist=("Site_ID", "size"),
     )
+    last_class = (
+        train.sort_values(["Site_ID", "Date_Year", "Date_Month", "Date_Day"], kind="mergesort")
+        .groupby("Site_ID")["target_bleaching"]
+        .last()
+        .rename("local_site_last_class")
+    )
+    stats = stats.join(last_class)
     stats["local_site_n_hist"] = stats["local_site_n_hist"].astype(float)
     return stats
 
@@ -292,6 +300,7 @@ def main() -> None:
         "local_site_severo_rate": float((train["target_bleaching"] == 2).mean()),
         "local_site_dhw_mean": float(train["TSA_DHW"].mean()),
         "local_site_n_hist": 0.0,
+        "local_site_last_class": float(train["target_bleaching"].mode().iloc[0]),
     }
     train = attach_local_features(train, stats, fallback)
     test = attach_local_features(test, stats, fallback)
